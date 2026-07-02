@@ -145,11 +145,11 @@ Crear una comunidad activa donde los fotógrafos urbanos puedan:
 
 Diseño gráfico • Desarrollo web • Fotografía
 
-🌐 https://snapcity.soyfrancesco.es/
+https://snapcity.soyfrancesco.es/
 
 ---
 
-# 📄 Licencia
+# Licencia
 
 Este proyecto ha sido desarrollado con fines educativos y como proyecto personal.
 
