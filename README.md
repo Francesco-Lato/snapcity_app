@@ -139,7 +139,7 @@ Crear una comunidad activa donde los fotógrafos urbanos puedan:
 
 ---
 
-# 👨‍💻 Autor
+# Autor
 
 **Francesco Latorrata**
 
