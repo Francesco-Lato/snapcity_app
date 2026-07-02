@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+/* variables*/
+:root {
+    --fuente-principal: 'Lexend Deca', sans-serif;
+
+
+    --color-fondo: #0a0a0a;
+    --color-texto: #e0e0e0;
+    --color-acento: #ffc107;
+    --color-cajas: #1a1a1a;
+    --color-bordes: #2a2a2a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-weight: 300; /* Un grosor ligero para los textos base da un toque muy premium */
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ajuste de grosor para títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600; 
+    color: #ffffff;
+}
+
+/*Formateo de inputs y botones */
+input, button, textarea, select {
+    font-family: var(--fuente-principal);
+    font-weight: 400;
+}

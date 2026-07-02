@@ -1,0 +1,10 @@
+{
+    "name": "francesco/urban-photo-app",
+    "description": "Plataforma web para fotografos urbanos",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}

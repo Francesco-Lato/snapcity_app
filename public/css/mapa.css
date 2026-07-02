@@ -1,0 +1,9 @@
+
+#mapa-gincana {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 2px solid #ddd;
+    z-index: 1; 
+}

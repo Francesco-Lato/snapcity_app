@@ -1,0 +1,170 @@
+
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: radial-gradient(circle at top, #1a1a1a 0%, #0a0a0a 100%); 
+}
+
+/*tarjeta principal*/
+.auth-container {
+    background: #1a1a1a;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* Textos cabecera */
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.auth-header h2 span {
+    color: #ffc107;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.auth-header p {
+    color: #888;
+    font-size: 0.95em;
+}
+
+/* Contenedores de los inputs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: #bbb;
+    font-weight: 500;
+}
+
+/*campos de texto */
+.form-group input {
+    padding: 14px;
+    background: #0a0a0a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #555;
+}
+
+.form-group input:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1); /* Resplandor amarillo sutil */
+}
+
+.btn-auth {
+    width: 100%;
+    padding: 15px;
+    background: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn-auth:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+/* Texto  registro/login */
+.auth-footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.auth-footer a {
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.auth-footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Biografia */
+.form-group textarea {
+    padding: 14px;
+    background: #0a0a0a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1em;
+    font-family: inherit;
+    resize: vertical; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group textarea:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+}
+
+/* checkboxes*/
+.checkbox-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 5px;
+    background: #0a0a0a;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ddd;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-bottom: 0; 
+}
+
+.checkbox-group input[type="checkbox"] {
+    accent-color: #ffc107; 
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Pone el icono del calendario en blanco para que se vea en el fondo oscuro */
+    cursor: pointer;
+}

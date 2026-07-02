@@ -1,0 +1,259 @@
+/* =========================================
+   SNAPCITY - VISTA DEL BUSCADOR
+   ========================================= */
+
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: radial-gradient(circle at top, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.auth-container {
+    background: #1a1a1a;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.acciones-superior {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.auth-header h2 span {
+    color: #ffc107;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.auth-header p {
+    color: #888;
+    font-size: 0.95em;
+}
+
+.bento-card {
+    background: #0a0a0a;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+/* Buscador principal */
+.buscador-tarjeta {
+    background: #0a0a0a;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.buscador-form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-buscar {
+    flex: 1;
+    padding: 14px;
+    background: #111;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1em;
+    transition: 0.3s ease;
+}
+.input-buscar:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+}
+
+.btn-primario {
+    background: #ffc107;
+    color: #000;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+.btn-primario:hover {
+    filter: brightness(1.1);
+}
+
+.btn-secundario {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9em;
+    border: 1px solid #444;
+}
+.btn-secundario:hover {
+    background: #444;
+}
+
+/* Resultados */
+.resultados-titulo h3 {
+    color: #ffc107;
+    margin-bottom: 15px;
+}
+
+.seccion-titulo {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.usuarios-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.usuario-resultado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a0a0a;
+    border: 1px solid #333;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.usuario-info strong {
+    color: #fff;
+}
+
+.usuario-info span {
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Cuadrícula de fotos encontradas */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.galeria-vacia {
+    text-align: center;
+    padding: 50px 0;
+    color: #666;
+}
+
+.foto-tarjeta {
+    background: #0a0a0a;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.foto-tarjeta:hover {
+    transform: translateY(-4px);
+    border-color: #ffc107;
+}
+
+.foto-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.foto-clicable {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: transform 0.4s;
+}
+.foto-tarjeta:hover .foto-clicable {
+    transform: scale(1.04);
+}
+
+.foto-info {
+    padding: 15px;
+}
+.foto-info h4 {
+    margin: 0 0 5px 0;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.etiqueta-badge {
+    display: inline-block;
+    margin-top: 10px;
+    background: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(5px);
+}
+.lightbox-contenido {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    margin-top: 5vh;
+    border-radius: 10px;
+}
+.cerrar-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.cerrar-lightbox:hover {
+    color: #ffc107;
+}
+.lightbox-caption {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    color: #bbb;
+    padding: 15px 0;
+    height: 10vh;
+    font-size: 1.2em;
+}

@@ -1,0 +1,161 @@
+/* =========================================
+   SNAPCITY - ESTILOS DE SUBIR FOTO
+   ========================================= */
+
+/* Reutilizamos el contenedor de autenticación para que sea coherente con el estilo de SnapCity */
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: radial-gradient(circle at top, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.auth-container {
+    background: #1a1a1a;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.auth-header h2 span {
+    color: #ffc107;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.auth-header p {
+    color: #888;
+    font-size: 0.95em;
+}
+
+/* Campos del formulario */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9em;
+    color: #bbb;
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 14px;
+    background: #0a0a0a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+}
+
+/* Interfaz del mapa en línea */
+.input-group-mapa {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-group-mapa input {
+    flex: 1;
+}
+
+.btn-verificar {
+    padding: 14px 20px;
+    background: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-verificar:hover {
+    background: #1e88e5;
+}
+
+.instrucciones-mapa {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+}
+
+#mapa-subida {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #333;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+/* Botones de acción inferiores */
+.acciones-perfil {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.acciones-perfil a, 
+.acciones-perfil button {
+    flex: 1;
+    padding: 14px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn-secundario {
+    background: #333;
+    color: #fff;
+}
+
+.btn-secundario:hover {
+    background: #444;
+}
+
+.btn-primario {
+    background: #ffc107;
+    color: #000;
+}
+
+.btn-primario:hover {
+    filter: brightness(1.1);
+}
